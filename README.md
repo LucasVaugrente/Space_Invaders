@@ -4,4 +4,4 @@
 
 - Réalisé par Nathanaël, Mathias, Lucas et Hugo
 
-Le fichier éxécutable se situe dans build/exe.win-amd64-3.8
+Pour faire fonctionner le programme, il faut lancer le fichier main.py
