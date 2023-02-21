@@ -13,7 +13,7 @@ options = {
 setup(
     name = "Space Invaders",
     options = options,
-    version = "2.4",
-    description = 'Voici le jeu space invaders, réalisé dans le cadre de la NSI avec Nathanael, Matthias, Lucas & Hugo',
+    version = "2.5",
+    description = 'Jeu vidéo Space Invaders',
     executables = executables
 )

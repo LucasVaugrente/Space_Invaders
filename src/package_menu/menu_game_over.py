@@ -16,14 +16,14 @@ class Game_over:
         self.GRAY = (180, 180, 180)
 
         # Charger le bouton retry
-        self.retry_button = pygame.image.load("././assets/img/menu_gameover/retry.png")
+        self.retry_button = pygame.image.load("../../assets/img/menu_gameover/retry.png")
         self.retry_button = pygame.transform.scale(self.retry_button, (260, 140))
         self.retry_button_rect = self.retry_button.get_rect()
         self.retry_button_rect.x = 604
         self.retry_button_rect.y = 384
 
         # Charger le bouton menu
-        self.menu_button = pygame.image.load("././assets/img/menu_gameover/menu.png")
+        self.menu_button = pygame.image.load("../../assets/img/menu_gameover/menu.png")
         self.menu_button = pygame.transform.scale(self.menu_button, (260, 140))
         self.menu_button_rect = self.menu_button.get_rect()
         self.menu_button_rect.x = 104
@@ -44,7 +44,7 @@ class Game_over:
         screen.blit(self.retry_button, self.retry_button_rect)
         screen.blit(self.menu_button, self.menu_button_rect)
 
-        font_score = pygame.font.Font('././assets/font/Starjedi.ttf', 32)
+        font_score = pygame.font.Font('../../assets/font/Starjedi.ttf', 32)
 
         if game.score >= game.highestscore:
             # appliquer le current score

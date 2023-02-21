@@ -18,7 +18,7 @@ class Comet(pygame.sprite.Sprite):
 
         super().__init__()
         # definir l'image de la comete
-        self.image = pygame.image.load("././assets/img/jeu/comet.png")
+        self.image = pygame.image.load("../../assets/img/jeu/comet.png")
 
         # redimensionner l'image de la comète
         self.image = pygame.transform.scale(self.image, (80, 80))

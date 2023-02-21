@@ -34,7 +34,7 @@ class Player(pygame.sprite.Sprite):
             self.coef_health = 3.75
             self.attack = 1000
             self.velocity = 20
-            self.image = pygame.image.load("././assets/img/jeu/V1.png")
+            self.image = pygame.image.load("../../assets/img/jeu/V1.png")
             self.color = (85, 50, 85)
 
         elif vaisseau_type == 2:
@@ -45,7 +45,7 @@ class Player(pygame.sprite.Sprite):
             self.coef_health = 1.5
             self.attack = 25
             self.velocity = 30
-            self.image = pygame.image.load("././assets/img/jeu/V2.png")
+            self.image = pygame.image.load("../../assets/img/jeu/V2.png")
             self.color = (45, 120, 60)
 
         elif vaisseau_type == 3:
@@ -56,7 +56,7 @@ class Player(pygame.sprite.Sprite):
             self.coef_health = 1
             self.attack = 50
             self.velocity = 10
-            self.image = pygame.image.load("././assets/img/jeu/V3.png")
+            self.image = pygame.image.load("../../assets/img/jeu/V3.png")
             self.color = (100, 25, 25)
 
         # Groupe de projectile (cf doc méthode sprite)

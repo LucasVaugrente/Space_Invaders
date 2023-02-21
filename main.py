@@ -31,7 +31,6 @@ running = True
 # Boucle tant que cette condition est vraie
 while running:
     
-
     # Afficher l'arrière plan de notre jeu
     game.fond_dynamique()
 
@@ -65,24 +64,18 @@ while running:
         game.paused = True
         # lancer le menu game over
         gameover.update(screen, game)
-
     
     # Actualiser la fenêtre
     pygame.display.flip()
 
-    
     # Détections des interactions joueurs / périphériques
     for event in pygame.event.get():
- 
-        
         
         # Vérifier que l'event est fermeture de fenêtre
         if event.type == pygame.QUIT:
             running = False
             pygame.quit()
             print("Fermeture du jeu")
-
-
 
         # Vérifier que l'event est une touche enfoncée
         if event.type == pygame.KEYDOWN:
@@ -99,7 +92,6 @@ while running:
                 
                 break     
             
-            
             # écrire l'username
             if event.key == pygame.K_BACKSPACE and game.is_playing == "home":
                 home.user_input_value = home.user_input_value[:-1]
@@ -113,13 +105,11 @@ while running:
             home.user_input_rect.x = 360
             home.user_input_rect.y = 390
             
-            
             # détecter si la touche espace est enclenchée
             # -> Lancer un projectile
             if event.key == pygame.K_SPACE:
                 
                 game.player.launch_projectile(selection.type_vaisseau)
-
 
             # détecter si la touche echap est enclenchée
             # -> le programme doit executer le menu selection
@@ -128,17 +118,13 @@ while running:
                 game.audio.start_music('pause')
                 game.is_playing = 'pause'
 
-
         # Vérifier que l'event est une touche relachée
         if event.type == pygame.KEYUP:
             game.pressed[event.key] = False
 
-
-
         # Vérifier que l'event est un click de la souris
         if event.type == pygame.MOUSEBUTTONDOWN:
             game.audio.make_sound('sound_click')
-            
             
             # Si menu home est executé 
             if game.is_playing == 'home':
@@ -149,7 +135,6 @@ while running:
                     # -> fin de la boucle + fermeture de pygame
                     running = False
                     pygame.quit()
-
 
             # Si menu selection est executé
             elif game.is_playing == 'selection':
@@ -175,7 +160,6 @@ while running:
                 if selection.back_button_rect.collidepoint(event.pos):
                     game.is_playing = 'home'
                     
-            
             # Si menu pause est executé
             elif game.is_playing == 'pause':
                 
@@ -201,7 +185,6 @@ while running:
                     game.audio.end_music()
                     game.audio.start_music('music_theme')
             
-            
             # Si menu pause est executé
             elif game.is_playing == 'game_over_menu':
                 
@@ -220,4 +203,3 @@ while running:
                     game.is_playing = 'game'
                     game.audio.end_music()
                     game.audio.start_music('music_theme2')
-
