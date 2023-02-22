@@ -4,4 +4,4 @@
 
 - Réalisé par Nathanaël, Mathias, Lucas et Hugo
 
-Pour faire fonctionner le programme, il faut lancer le fichier main.py
+Vous pouvez ce jeu en lancant l'application "Space Invaders.lnk"
