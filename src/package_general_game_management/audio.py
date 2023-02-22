@@ -23,9 +23,9 @@ class Audio:
 
         #Les bruitages du jeu
         #Note Nath : seules les format .ogg et wav sont acceptés
-        self.sound_click = pygame.mixer.Sound('../../assets/audio/sounds/click.wav')
-        self.sound_laser = pygame.mixer.Sound('../../assets/audio/sounds/laser.ogg')
-        self.sound_heal = pygame.mixer.Sound('../../assets/audio/sounds/heal.wav')
+        self.sound_click = pygame.mixer.Sound('../../assets/audio/sounds/click.mp3')
+        self.sound_laser = pygame.mixer.Sound('../../assets/audio/sounds/laser.mp3')
+        self.sound_heal = pygame.mixer.Sound('../../assets/audio/sounds/heal.mp3')
         self.sound_comet = pygame.mixer.Sound('../../assets/audio/sounds/comet.wav')
 
     def start_music(self, song):
