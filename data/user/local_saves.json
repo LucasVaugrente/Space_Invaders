@@ -61,5 +61,26 @@
         ],
         "last_vaisseau_chosen": "v1",
         "highestscore": 1874
+    },
+    "feerf": {
+        "control": {
+            "right": "K_RIGHT",
+            "left": "K_LEFT",
+            "up": "K_UP",
+            "down": "K_DOWN"
+        },
+        "language": "french",
+        "luminosity": 100,
+        "resolution": [
+            1000,
+            600
+        ],
+        "volume": [
+            100,
+            100,
+            100
+        ],
+        "last_vaisseau_chosen": "v1",
+        "highestscore": 7421
     }
 }
