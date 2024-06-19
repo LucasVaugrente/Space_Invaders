@@ -1,7 +1,18 @@
-- Projet Space Invaders dans le cadre de la NSI
-- Language : Python
-- Dépendances : Pygame
+# 👾 Space Invaders
 
-- Réalisé par Nathanaël, Mathias, Lucas et Hugo
+![Language](https://img.shields.io/badge/Language-Python-ffdd63)
+![Language](https://img.shields.io/badge/Language-Pygame-e56652)
+![Open Source](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
 
-Vous pouvez ce jeu en lancant l'application "Space Invaders.lnk"
+<br/>
+
+A reproduction of the space invaders game
+
+<br/>
+
+# 🙎‍♂️ Credits
+
+* [**Lucas Vaugrente**](https://github.com/lucasvaugrente) : Co-creator of the project.
+* **Nathanaël** : Co-creator of the project.
+* **Matthias** : Co-creator of the project.
+* **Hugo** : Co-creator of the project.
