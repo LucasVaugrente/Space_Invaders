@@ -23,7 +23,7 @@ class Alien(pygame.sprite.Sprite):
         self.health = 100
         self.max_health = 100
         self.attack = 0.3
-        self.image = pygame.image.load("../../assets/img/jeu/alien.png")
+        self.image = pygame.image.load("assets/img/jeu/alien.png")
 
         #coordonées
         self.rect = self.image.get_rect()

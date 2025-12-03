@@ -18,10 +18,10 @@ class Bonus(pygame.sprite.Sprite):
         self.tag = tag #Tag/Nom du bonus
 
         #Gestion des images
-        self.image = pygame.image.load("../../assets/img/jeu/heal.png")
+        self.image = pygame.image.load("assets/img/jeu/heal.png")
         self.image = pygame.transform.scale(self.image, (50, 50))
-        self.image_bonus_on = pygame.image.load("../../assets/img/jeu/heal.png")
-        self.image_effect = pygame.image.load('../../assets/img/jeu/heal.png')
+        self.image_bonus_on = pygame.image.load("assets/img/jeu/heal.png")
+        self.image_effect = pygame.image.load('assets/img/jeu/heal.png')
 
         #Gestion de la position
         self.rect = self.image.get_rect()
@@ -42,11 +42,11 @@ class Bonus(pygame.sprite.Sprite):
         Fonction effectuant les instructions en fonction du type du bonus récupéré par le joueur
         """
         if self.tag == 'Heal' and self.activated == 1:
-            self.image = pygame.image.load("../../assets/img/jeu/heal.png")
+            self.image = pygame.image.load("assets/img/jeu/heal.png")
             self.image = pygame.transform.scale(self.image, (50, 50))
-            self.image_bonus_on = pygame.image.load("../../assets/img/jeu/heal.png")
+            self.image_bonus_on = pygame.image.load("assets/img/jeu/heal.png")
             self.image_bonus_on = pygame.transform.scale(self.image_bonus_on, (100, 100))
-            # self.image_effect = pygame.image.load('../../assets/img/jeu/V1.png')
+            # self.image_effect = pygame.image.load('assets/img/jeu/V1.png')
             self.heal()
             self.length = 5
             self.time = time()
@@ -64,7 +64,7 @@ class Bonus(pygame.sprite.Sprite):
         if not (self.tag == None) and self.activated == 1:
             self.game.screen.blit(self.image_bonus_on, (50, 450))
             if self.type == 1:
-                font_bonus = font_score = pygame.font.Font('../../assets/font/Starjedi.ttf', 25)
+                font_bonus = font_score = pygame.font.Font('assets/font/Starjedi.ttf', 25)
                 text_bonus = font_bonus.render(str(self.tag) + ' Bonus', 1, (230, 230, 230))
                 self.game.screen.blit(text_bonus, (20, 400))
             else:

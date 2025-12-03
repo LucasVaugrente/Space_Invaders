@@ -16,17 +16,17 @@ class Audio:
         self.playlist = list()
 
         #Les osts du jeu (note nath: seule les formats mp3 sont accetpés)
-        self.music_theme = '../../assets/audio/ost/theme.mp3'
-        self.music_theme2 = '../../assets/audio/ost/theme2.mp3'
-        self.pause = '../../assets/audio/ost/pause.mp3'
-        self.over = '../../assets/audio/ost/over.mp3'
+        self.music_theme = 'assets/audio/ost/theme.mp3'
+        self.music_theme2 = 'assets/audio/ost/theme2.mp3'
+        self.pause = 'assets/audio/ost/pause.mp3'
+        self.over = 'assets/audio/ost/over.mp3'
 
         #Les bruitages du jeu
         #Note Nath : seules les format .ogg et wav sont acceptés
-        self.sound_click = pygame.mixer.Sound('../../assets/audio/sounds/click.mp3')
-        self.sound_laser = pygame.mixer.Sound('../../assets/audio/sounds/laser.mp3')
-        self.sound_heal = pygame.mixer.Sound('../../assets/audio/sounds/heal.mp3')
-        self.sound_comet = pygame.mixer.Sound('../../assets/audio/sounds/comet.wav')
+        self.sound_click = pygame.mixer.Sound('assets/audio/sounds/click.mp3')
+        self.sound_laser = pygame.mixer.Sound('assets/audio/sounds/laser.mp3')
+        self.sound_heal = pygame.mixer.Sound('assets/audio/sounds/heal.mp3')
+        self.sound_comet = pygame.mixer.Sound('assets/audio/sounds/comet.wav')
 
     def start_music(self, song):
         """
@@ -43,6 +43,7 @@ class Audio:
 
             pygame.mixer.music.load(getattr(self, song, 'the song entered isn\'t settled ;p'))
             pygame.mixer.music.play(-1, 0)
+            pygame.mixer.music.set_volume(0.1)
 
         else: #si une playliste est voulu, fonctionne, mais non-utilisé pour le moment, au final
             self.playlist.clear()

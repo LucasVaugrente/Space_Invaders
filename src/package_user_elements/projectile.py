@@ -16,13 +16,13 @@ class Projectile(pygame.sprite.Sprite):
 
         #Afficahge conditionnel en fonction du type de vaitesseau du joueur
         if vaisseau_type == 1:
-            self.image = pygame.image.load("../../assets/img/jeu/V1_projectile.png")
+            self.image = pygame.image.load("assets/img/jeu/V1_projectile.png")
 
         elif vaisseau_type == 2:
-            self.image = pygame.image.load("../../assets/img/jeu/V2_projectile.png")
+            self.image = pygame.image.load("assets/img/jeu/V2_projectile.png")
 
         elif vaisseau_type == 3:
-            self.image = pygame.image.load("../../assets/img/jeu/V3_projectile.png")
+            self.image = pygame.image.load("assets/img/jeu/V3_projectile.png")
 
         #Gestion de la position
         self.rect = self.image.get_rect()

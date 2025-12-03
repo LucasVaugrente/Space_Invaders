@@ -15,5 +15,5 @@ setup(
     options = options,
     version = "2.5",
     description = 'Jeu vidéo Space Invaders',
-    executables = executables
+    executables = executables, requires=['pygame', 'cx-freeze']
 )

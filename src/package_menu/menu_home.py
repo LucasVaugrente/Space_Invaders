@@ -14,7 +14,7 @@ class Home:
         self.GRAY = (180, 180, 180)
 
         self.clock = pygame.time.Clock()
-        self.font = pygame.font.Font('../../assets/font/Starjedi.ttf', 38)
+        self.font = pygame.font.Font('assets/font/Starjedi.ttf', 38)
 
         self.user_input_value = ""
         self.user_input = self.font.render(self.user_input_value, True, self.GRAY)
@@ -23,18 +23,18 @@ class Home:
         self.user_input_rect.y = 420
 
         # Charger le title
-        self.banner = pygame.image.load("../../assets/img/menu_principal/baniere.png")
+        self.banner = pygame.image.load("assets/img/menu_principal/baniere.png")
         self.banner_rect = self.banner.get_rect()
         self.banner_rect.x = 0
 
         # Charger la zone du username pour lancer la partie
-        self.selection_button = pygame.image.load("../../assets/img/menu_principal/home.png")
+        self.selection_button = pygame.image.load("assets/img/menu_principal/home.png")
         self.selection_button_rect = self.selection_button.get_rect()
         self.selection_button_rect.x = 300
         self.selection_button_rect.y = screen.get_height() // 2 + 40
 
         # Charger le bouton quit
-        self.quit_button = pygame.image.load("../../assets/img/menu_principal/quit.png")
+        self.quit_button = pygame.image.load("assets/img/menu_principal/quit.png")
         self.quit_button = pygame.transform.scale(self.quit_button, (150, 85))
         self.quit_button_rect = self.quit_button.get_rect()
         self.quit_button_rect.x = 10

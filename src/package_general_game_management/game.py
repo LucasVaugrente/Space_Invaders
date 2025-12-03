@@ -31,7 +31,7 @@ class Game:
 
         # Générer le fond d'écran
         self.screen = pygame.display.set_mode((1000, 600))
-        self.background = pygame.image.load("../../assets/img/fond.png")
+        self.background = pygame.image.load("assets/img/fond.png")
         self.background_position = 0
         self.background_bis_position = -600
         self.velo_bg = 3
@@ -59,7 +59,7 @@ class Game:
         self.username = 'None'
         # ouvrir le fichier data.json : un dictionnaire qui enregistre les 
         # données des joueurs
-        with open('../../data/user/local_saves.json', 'r') as file:
+        with open('data/user/local_saves.json', 'r') as file:
             self.data = json.load(file)
 
         self.highestscore = 0
@@ -137,7 +137,7 @@ class Game:
 
         if t == 0:
             self.data[self.username]['highestscore'] = self.highestscore
-            with open("../../data/user/local_saves.json", 'w') as file:
+            with open("data/user/local_saves.json", 'w') as file:
                 file.write(json.dumps(self.data, indent=4))
 
         self.score = 0
@@ -234,7 +234,7 @@ class Game:
 
         ### UPDATE DU SCORE ###
 
-        font_score = pygame.font.Font('../../assets/font/Starjedi.ttf', 32)
+        font_score = pygame.font.Font('assets/font/Starjedi.ttf', 32)
         text_score = font_score.render(str(self.score), 1, (180, 180, 180))
         screen.blit(text_score, (880, 530))
 
