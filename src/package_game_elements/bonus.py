@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
-# imports de modules éxtérieurs
 import pygame
 from random import randint
 from time import time
-
 
 class Bonus(pygame.sprite.Sprite):
     """
@@ -61,10 +58,10 @@ class Bonus(pygame.sprite.Sprite):
         Gestion de l'affichage à gauche lorsqu'un bonus est actif
         """
 
-        if not (self.tag == None) and self.activated == 1:
+        if not (self.tag is None) and self.activated == 1:
             self.game.screen.blit(self.image_bonus_on, (50, 450))
             if self.type == 1:
-                font_bonus = font_score = pygame.font.Font('assets/font/Starjedi.ttf', 25)
+                font_bonus = pygame.font.Font('assets/font/Starjedi.ttf', 25)
                 text_bonus = font_bonus.render(str(self.tag) + ' Bonus', 1, (230, 230, 230))
                 self.game.screen.blit(text_bonus, (20, 400))
             else:

@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
-#imports de modules éxtérieurs
 import pygame
 from random import randint
-
 
 class Alien(pygame.sprite.Sprite):
     """

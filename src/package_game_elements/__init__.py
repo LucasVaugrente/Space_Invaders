@@ -1,4 +1,3 @@
-
 """
 Ce package contient les modules des classes utilisées de fonctions de gestion des éléments du jeu :
 - Module Alien, gérant les éléments de type Alien
@@ -7,11 +6,6 @@ Ce package contient les modules des classes utilisées de fonctions de gestion d
 
 """
 
-#import des modules :
-
 from .alien import Alien
 from .comet import Comet
 from .bonus import Bonus
-
-
-

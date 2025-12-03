@@ -1,15 +1,11 @@
-# -*- coding: utf-8 -*-
-# imports de modules éxtérieurs
 import pygame
 import json
 from random import uniform
 
-# imports de packages locaux :
 from src.package_general_game_management.comet_event import CometFallEvent
 from src.package_general_game_management.audio import Audio
 from src.package_general_game_management.spawning import Spawning
 from src.package_user_elements.player import Player
-
 
 class Game:
     """
@@ -78,7 +74,7 @@ class Game:
         if not self.paused:
             self.background_position += self.velo_bg
             if self.background_position != 0:
-                background_bis_position = self.background
+                background_position_2 = self.background
 
             self.background_bis_position += self.velo_bg
             if self.background_bis_position > 0:
@@ -89,7 +85,7 @@ class Game:
 
         # Si le jeu est en pause l'arrière plan ne défile plus
         if not self.paused:
-            self.screen.blit(background_bis_position, (0, self.background_bis_position))
+            self.screen.blit(background_position_2, (0, self.background_bis_position))
 
     def start(self, type_vaisseau):
 
@@ -205,7 +201,6 @@ class Game:
         # Vérifier que si le bonus sort de l'écran on le supprime
         try:
             if bonus.rect.y > 600:
-                print('Bye bye bonnus')
                 bonus.remove()
         except UnboundLocalError:
             pass
@@ -285,4 +280,3 @@ class Game:
         elif not self.username in self.data:
             self.highestscore = 0
             self.highestscore_tampon = 0
-            

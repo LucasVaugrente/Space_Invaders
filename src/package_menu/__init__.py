@@ -1,4 +1,3 @@
-
 """
 Ce package contient les modules des classes utilisées de fonctions gérant les interfaces/menus du jeu :
 - Module home, menu d'accueil
@@ -8,8 +7,6 @@ Ce package contient les modules des classes utilisées de fonctions gérant les 
 - Module Game Over, menu affichée quand un joueur meurt
 
 """
-
-#import des modules :
 
 from .menu_home import Home
 from .selection import Selection

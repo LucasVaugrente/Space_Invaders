@@ -1,13 +1,10 @@
 import pygame
 
-
-# Définir la classe qui va gerer le projectile de notre joueur
 class Projectile(pygame.sprite.Sprite):
     """
     Classe ayant pour rôle de gérer l'entité projectile, lazer tiré par le vaisseau
     """
 
-    # Définier le constructeur de cette classe
     def __init__(self, player, vaisseau_type):
         super().__init__()
 

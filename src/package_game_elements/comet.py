@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
-# imports de modules éxtérieurs
 import pygame
 import random
-
 
 class Comet(pygame.sprite.Sprite):
     """
@@ -37,13 +34,13 @@ class Comet(pygame.sprite.Sprite):
         self.comet_event = comet_event
 
     def remove(self):
-        '''
+        """
         La méthode remove supprime la comète avec la fonction remove() proposée
         par pygame. Lorsque l'évènement se déclenche, si toutes les comètes sont
         détruites ( ne sont plus dans le jeu ), alors on remet à 0 la barre qui
         permet de rafraichir l'évènement comet_event et fait apparaitre des ennemis
         par la suite.'
-        '''
+        """
         self.comet_event.all_comets.remove(self)
 
         # si le nombre de comete est de 0
@@ -57,13 +54,13 @@ class Comet(pygame.sprite.Sprite):
             self.comet_event.game.spawning.spawn_alien()
 
     def fall(self):
-        '''
-        La méthode fall permet de faire avancer la comète de haut en bas. Si la 
+        """
+        La méthode fall permet de faire avancer la comète de haut en bas. Si la
         comète atteint le sol, c'est-à-dire le bas de l'écran, on retire la comète
         avec la méthode remove(). Il y a aussi la collision avec le joueur, pour
         cela la comète disparait et le joueur pert des dégats grâce à une de ses
         méthodes ( du joueur )
-        '''
+        """
         self.rect.y += self.velocity
 
         # ne tombe pas sur le sol

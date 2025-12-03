@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-# imports de module extérieurs :
 import pygame
-
 
 class Home:
     """
@@ -53,7 +50,7 @@ class Home:
         -------
         Applique tout l'affichage
         """
-        screen.blit(self.banner, (self.banner_rect))
+        screen.blit(self.banner, self.banner_rect)
         screen.blit(self.selection_button, self.selection_button_rect)
         screen.blit(self.quit_button, self.quit_button_rect)
 

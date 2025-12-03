@@ -1,8 +1,4 @@
-# MODULE WORKING IN PROGRESS
-# -*- coding: utf-8 -*-
-# imports de module extérieurs :
 import pygame
-
 
 class Setting:
     def __init__(self):

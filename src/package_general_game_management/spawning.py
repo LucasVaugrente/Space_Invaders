@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
-#imports de modules éxtérieurs
 from random import choices
-#imports de packages locaux :
-from src.package_game_elements import *
 
+from src.package_game_elements import *
 
 class Spawning:
     """
@@ -33,8 +30,8 @@ class Spawning:
         -------
         Ajout d'un alien dans la liste des alien de l'instance du jeu
         """
-        alien = Alien(self.game, target, self.velocity)
-        self.game.aliens.add(alien)
+        alien1 = Alien(self.game, target, self.velocity)
+        self.game.aliens.add(alien1)
 
     def spawn_bonus(self, shift):
         """
@@ -77,7 +74,6 @@ class Spawning:
 
             self.wave += 1
             self.wave = 0 if self.wave == 5 else self.wave
-            print('wave : ', self.wave, ' | level : ', self.level)
 
             if self.wave == 0:
                 if not self.level > 7:
@@ -86,6 +82,6 @@ class Spawning:
                     self.game.player.velocity += 1
                     self.game.velo_bg += 1
 
+            return None
         else:
-
             return None

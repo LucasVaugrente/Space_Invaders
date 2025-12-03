@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
-# imports de modules éxtérieurs
 import pygame
-# imports de packages locaux :
-from .projectile import Projectile
 
+from .projectile import Projectile
 
 class Player(pygame.sprite.Sprite):
     """

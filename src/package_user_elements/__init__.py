@@ -1,4 +1,3 @@
-
 """
 Ce package contient les modules des classes utilisées de fonctions des éléments lié au joueur :
 - Module Player, gérant l'instance de notre vaisseau spatiale
@@ -6,10 +5,5 @@ Ce package contient les modules des classes utilisées de fonctions des élémen
 
 """
 
-#import des modules :
-
 from .player import Player
 from .projectile import Projectile
-
-
-

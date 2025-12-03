@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-# imports de module extérieurs :
 import pygame
-
 
 class Selection:
     """
